@@ -77,7 +77,7 @@ binary_sensor:
     name: "Button"
     entity_category: diagnostic
   - platform: gpio
-    id: "${id_prefix}_dry_contact_open"
+    id: "${id_prefix}_dry_contact_open_sensor"
     pin:
       number: ${dry_contact_open_pin}  # D5 dry contact for opening door
       inverted: true
@@ -93,7 +93,7 @@ binary_sensor:
         lambda: |-
           id($id_prefix)->set_open_limit(x);
   - platform: gpio
-    id: "${id_prefix}_dry_contact_close"
+    id: "${id_prefix}_dry_contact_close_sensor"
     pin:
       number: ${dry_contact_close_pin}  # D6 dry contact for closing door
       inverted: true
