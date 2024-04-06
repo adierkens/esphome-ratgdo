@@ -6,7 +6,7 @@ external_components:
       # path: components
       type: git
       url: https://github.com/ratgdo/esphome-ratgdo
-      ref: trigger-dry-contact-door-toggle
+      # ref: trigger-dry-contact-door-toggle
     refresh: 1s
 
 preferences:
